@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="reservoirData"
+            type="com.rayhung.mvvmtest_java.POJO.ReservoirDataPOJO"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rv_reservoir_item_main_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/editext_background_dark">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rv_reservoir_item_main_clayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/rv_reservoir_item_reservoirname_txw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@{reservoirData.reservoirName}"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/rv_reservoir_item_reservoirdetail_clayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_reservoirname_txw">
+
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_effectivecapacity_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/rv_reservoir_effectivecapacity_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_fullwaterlevel_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_fullwaterlevel_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_effectivecapacity_unit_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_deadstoragelevel_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_deadstoragelevel_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_fullwaterlevel_unit_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_catchmentarearainfall_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/rv_reservoir_catchmentarearainfall_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_deadstoragelevel_unit_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_inflowvolume_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_inflowvolume_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_catchmentarearainfall_unit_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_outflowtotal_title_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_outflowtotal_title"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_inflowvolume_unit_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_effectivecapacity_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.effectiveCapacity)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_effectivecapacity_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_effectivecapacity_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_fullwaterlevel_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.fullWaterLevel)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_fullwaterlevel_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_fullwaterlevel_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_deadstoragelevel_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.deadStorageLevel)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_deadstoragelevel_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_deadstoragelevel_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_catchmentarearainfall_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.catchmentAreaRainfall)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_catchmentarearainfall_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_catchmentarearainfall_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_inflowvolume_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.inflowVolume)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_inflowvolume_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_inflowvolume_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_outflowtotal_content_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@{String.valueOf(reservoirData.outflowTotal)}"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/rv_reservoir_item_outflowtotal_unit_txw"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_outflowtotal_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_effectivecapacity_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_effectivecapacity_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_effectivecapacity_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_fullwaterlevel_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_fullwaterlevel_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_fullwaterlevel_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_deadstoragelevel_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_deadstoragelevel_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_deadstoragelevel_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_catchmentarearainfall_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_catchmentarearainfall_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_catchmentarearainfall_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_inflowvolume_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_inflowvolume_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_inflowvolume_title_txw" />
+
+                <TextView
+                    android:id="@+id/rv_reservoir_item_outflowtotal_unit_txw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rv_reservoir_outflowtotal_unit"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_reservoir_item_outflowtotal_title_txw" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

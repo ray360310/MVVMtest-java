@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">mvvmtest-java</string>
+    <string name="splash_internet_success">Online</string>
+    <string name="splash_internet_failure">Offline</string>
+    <string name="app_show_name">DailyreservoirData</string>
+    <string name="rv_reservoir_reservoirname">reservoirName</string>
+    <string name="rv_reservoir_effectivecapacity_title">Effective Capacity:</string>
+    <string name="rv_reservoir_fullwaterlevel_title">Full Water Level:</string>
+    <string name="rv_reservoir_deadstoragelevel_title">Dead Storage Level:</string>
+    <string name="rv_reservoir_catchmentarearainfall_title">Catchment Area Rainfall:</string>
+    <string name="rv_reservoir_inflowvolume_title">Inflow Volume:</string>
+    <string name="rv_reservoir_outflowtotal_title">Outflow Total:</string>
+    <string name="rv_reservoir_effectivecapacity_unit">10000 Cubic Meter</string>
+    <string name="rv_reservoir_fullwaterlevel_unit">M</string>
+    <string name="rv_reservoir_deadstoragelevel_unit">M</string>
+    <string name="rv_reservoir_catchmentarearainfall_unit">mm</string>
+    <string name="rv_reservoir_inflowvolume_unit">10000 Cubic Meter</string>
+    <string name="rv_reservoir_outflowtotal_unit">10000 Cubic Meter</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background_dark">#0A0C1A</color>
+    <color name="editext_background_dark">#24253B</color>
+    <color name="button_edge_line">#20B0FF</color>
+    <color name="text_color">@android:color/white</color>
+    <color name="text_hint_color">@android:color/darker_gray</color>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mvvmtest-java</string>
+    <string name="splash_internet_success">已聯網</string>
+    <string name="splash_internet_failure">沒有網路連線</string>
+    <string name="app_show_name">每日水庫資料</string>
+    <string name="rv_reservoir_reservoirname">水庫名稱</string>
+    <string name="rv_reservoir_effectivecapacity_title">有效容量：</string>
+    <string name="rv_reservoir_fullwaterlevel_title">滿水位：</string>
+    <string name="rv_reservoir_deadstoragelevel_title">呆水位：</string>
+    <string name="rv_reservoir_catchmentarearainfall_title">集水區降雨量：</string>
+    <string name="rv_reservoir_inflowvolume_title">進水量：</string>
+    <string name="rv_reservoir_outflowtotal_title">出水量：</string>
+    <string name="rv_reservoir_effectivecapacity_unit">萬立方公尺</string>
+    <string name="rv_reservoir_fullwaterlevel_unit">公尺</string>
+    <string name="rv_reservoir_deadstoragelevel_unit">公尺</string>
+    <string name="rv_reservoir_catchmentarearainfall_unit">毫米</string>
+    <string name="rv_reservoir_inflowvolume_unit">萬立方公尺</string>
+    <string name="rv_reservoir_outflowtotal_unit">萬立方公尺</string>
+</resources>
