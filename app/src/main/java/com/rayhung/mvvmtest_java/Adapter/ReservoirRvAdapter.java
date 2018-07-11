@@ -1,6 +1,7 @@
 package com.rayhung.mvvmtest_java.Adapter;
 
 import android.support.annotation.NonNull;
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -53,4 +54,10 @@ public class ReservoirRvAdapter extends RecyclerView.Adapter<ReservoirRvAdapter.
     public int getItemCount() {
         return mDataList.size();
     }
+
+    public void swapDataList(List<ReservoirDataPOJO> newDataList) {
+        this.mDataList.clear();
+        this.mDataList.addAll(newDataList);
+    }
+
 }

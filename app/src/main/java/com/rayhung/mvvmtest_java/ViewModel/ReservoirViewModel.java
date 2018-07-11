@@ -23,7 +23,7 @@ public class ReservoirViewModel extends ViewModel {
         this.mreservoirDataModel = reservoirDataModel;
     }
 
-    LiveData<List<ReservoirDataPOJO>> getreservoirDatas(){
+    public LiveData<List<ReservoirDataPOJO>> getreservoirDatas(){
         return reservoirData;
     }
 
